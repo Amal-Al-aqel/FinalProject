@@ -35,7 +35,7 @@ h6{
     font-size:1em;font-weight:bold;
 }
 p{
-    line-height: 1.5em;
+    line-height: 1.5rem;
     margin:0 0 1.5 0; 
 }
 `
