@@ -18,7 +18,7 @@ export const setFlex = ({ x = "center", y = "center" } = {}) => {
 };
 
 export const setBackground = ({
-  img = "https://images.pexels.com/photos/1628086/pexels-photo-1628086.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
+  img = "https://images.pexels.com/photos/6181222/pexels-photo-6181222.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
   color = "rgba(0,0,0,0)"
 } = {}) => {
   return `background: linear-gradient(${color}, ${color}),
