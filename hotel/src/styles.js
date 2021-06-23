@@ -10,7 +10,8 @@ export const setColor = {
 
 export const setFont = {
   main: "font-family: 'Lato', sans-serif;",
-  slanted: "font-family: 'Courgette', cursive;"
+  slanted: "font-family: 'Lobster Two', cursive;",
+  amal: "font-family: 'Lobster Two', cursive;",  
 };
 
 export const setFlex = ({ x = "center", y = "center" } = {}) => {

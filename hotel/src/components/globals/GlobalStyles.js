@@ -1,7 +1,9 @@
 import { createGlobalStyle } from 'styled-components'
 import { setColor, setFont } from '../../styles';
+
 const Globals = createGlobalStyle`
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Open+Sans:wght@300;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
 :root{
     --color:red;
 }
