@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import {Room} from './Room'
+import Room from './Room'
 import Section from '../globals/Section'
 import styled from 'styled-components'
 import Title from '../globals/Title'
@@ -27,12 +27,14 @@ export default class Rooms extends Component {
 const RoomsCenter = styled.div`
 width:90vw;
 margin: 0 auto;
+
 ${media.tablet`
 display: grid;
-grid-template-columns: 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr;
 grid-column-gap:${setRem(32)};
 `};
-${media.desktop`
+
+${media.large`
 width:100vw;
 max-width:1170px;
 `};
