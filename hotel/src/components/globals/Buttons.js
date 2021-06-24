@@ -23,4 +23,5 @@ cursor: pointer;
 `
 export const SmallBtn = styled(PrimaryBtn)`
 padding:${setRem(9)} ${setRem(12)};
+margin: 1px 1px;
 `;

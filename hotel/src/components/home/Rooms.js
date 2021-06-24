@@ -99,10 +99,14 @@ const Rooms = () => {
                     {rooms.map((room)=>{
                         return <Room key={room.id} room={room} />
                     })}
-                </RoomsCenter>                            
+                </RoomsCenter>    
+                {localStorage.getItem("token") == null ? null:                        
+                <>
                   <SmallBtn onClick={(e) => deleteRoom(e)}>Delete</SmallBtn>
                   <SmallBtn onClick={(e) => addRoom(e)}>Add</SmallBtn>
-                  <SmallBtn onClick={(e) => putRoom(e)}>Put</SmallBtn>
+                  <SmallBtn onClick={(e) => putRoom(e)}>Update</SmallBtn>
+                </>
+                }
             </Section>                    
         </div>
     )

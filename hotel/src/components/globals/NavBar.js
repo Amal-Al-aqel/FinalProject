@@ -29,13 +29,25 @@ export const NavBar = () => {
 
     useEffect(() => {
         console.log("component did mount")
-        if (localStorage.getItem("token")) {
-          setName(localStorage.getItem("name"))
-          setEmail(localStorage.getItem("email"))
-          setPicture(localStorage.getItem("picture"))
-          setToken(localStorage.getItem("token"))
-        }
+        if(token){
+            console.log("there is a token")
+            localStorage.setItem("name", name);
+            localStorage.setItem("email", email);
+            localStorage.setItem("token", token);
+            localStorage.setItem("picture", picture);
+          }
       }, [])
+
+      useEffect(() => {
+        console.log("component did mount")
+        if(token){
+            console.log("there is a token")
+            localStorage.setItem("name", name);
+            localStorage.setItem("email", email);
+            localStorage.setItem("token", token);
+            localStorage.setItem("picture", picture);
+          }
+      })
 
       const logout = () => {
         localStorage.clear()
@@ -46,7 +58,7 @@ export const NavBar = () => {
     <GlobalStyles />            
     <SmallBtn as="a" href="/">Home</SmallBtn>
     <SmallBtn as="a" href="/about">about us</SmallBtn>
-    {token != "" ? <SmallBtn as="a" href="/">Logout</SmallBtn> :
+    {localStorage.getItem("token") ? <SmallBtn onClick={logout} as="a" href="/">Logout</SmallBtn> :
     <>
     {/* <SmallBtn as="a" href="/login">Login</SmallBtn> */}
     <FacebookLogin
