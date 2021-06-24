@@ -11,7 +11,8 @@ import {
   Link
 } from "react-router-dom";
 
-ReactDOM.render(
+
+ReactDOM.render(  
   <Router>
     <Route exact path="/" component={App} />
     <Route exact path="/about" component={About} />

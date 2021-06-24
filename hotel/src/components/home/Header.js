@@ -8,7 +8,7 @@ import { PrimaryBtn } from '../globals/Buttons'
 export const Header = () => {
     return (
         <Hero >
-            <Banner greeting="welcome to" title="dreams resort" text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur nihil sapiente rem perspiciatis voluptatem deleniti?" > 
+            <Banner greeting="welcome to" title="Dreams resort" text="Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur nihil sapiente rem perspiciatis voluptatem deleniti?" > 
             <PrimaryBtn t="1rem">View Details</PrimaryBtn>
             {/* <PrimaryBtn as="a" href="https://www.google.com" t="1rem">View Details</PrimaryBtn> */}
             </Banner>                     

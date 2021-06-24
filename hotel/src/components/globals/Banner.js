@@ -23,7 +23,7 @@ const fadeIn = (start, point, end) =>{
 const Banner = ({className, title, text, children, greeting}) => {
     return (
         <div className={className}>
-            <h1>{greeting}<span>{title}</span></h1>
+            <h1>{greeting}{" "}<span>{title}</span></h1>
             <div className="info">
                 <p>{text}</p>
                 {children}
